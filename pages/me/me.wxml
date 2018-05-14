@@ -5,8 +5,8 @@
     <view class="userinfo-other">
       <view class="userinfo-nickname">{{userInfo.nickName}}</view>
       <view class="me-userinfo-update">
-        <button class="me-userinfo-update-btn" hover-class="none" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
-        <view wx:else>请升级微信版本</view>
+         <button class="me-userinfo-update-btn" hover-class="none" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">更新信息</button> 
+          <view wx:else>请升级微信版本</view>  
       </view>
     </view>
   </view>

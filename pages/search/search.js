@@ -25,6 +25,7 @@ Page({
       'form.keyword': val
     })
   },
+
   // 清清除搜索词
   clearKeyWord() {
     this.setData({
@@ -59,5 +60,14 @@ Page({
       }
     })
   },
+
+  // 历史搜索点击
+  tapHistoryItem(e) {
+    const val = e.currentTarget.dataset.key;
+    this.setData({
+      'form.keyword': val || '推荐'
+    })
+    this.submitSearch();
+  }
 
 })

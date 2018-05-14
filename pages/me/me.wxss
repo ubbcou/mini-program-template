@@ -26,11 +26,14 @@ page {
   display: inline-block;
   border: 1rpx solid #fff;
   border-radius: 24rpx;
-  padding: 3rpx 24rpx;
+  padding: 6rpx 24rpx;
   margin-top: 12rpx;
+  font-size: 10px;
   opacity: .9
 }
 .me-userinfo-update-btn {
+  padding-top: 6rpx;
+  display: block;
   color: #fff;
 }
 /* 用户信息面板 ...end */

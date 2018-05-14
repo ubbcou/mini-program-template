@@ -7,7 +7,7 @@
   <form bindsubmit="submitSearch">
     <view class="sch-wrap">
       <view class="sch-input-wrap">
-        <input class="sch-input" placeholder="输入商品关键字" bindinput="changeKeyWords" bindconfirm="submitSearch" />
+        <input class="sch-input" placeholder="输入商品关键字" bindinput="changeKeyWords" bindconfirm="submitSearch" value="{{form.keyword}}" />
         <button class="sch-clear-wrap" hover-class="none" form-type="reset" bindtap="clearKeyWord">
           <icon type="clear" class="sch-clear" size="16" />
         </button>
@@ -26,12 +26,12 @@
       <text class="hst-title-item hst-clear">清空</text>
     </view>
     <view class="hst-list">
-      <text class="hst-item">衣服</text>
-      <text class="hst-item">衣服</text>
-      <text class="hst-item">decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
-      <text class="hst-item">衣服</text>
-      <text class="hst-item">https://developers.weixin.qq.com/miniprogram/dev/component/text.html</text>
-      <text class="hst-item">衣服</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">衣服</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">衣服</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">衣服</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">https://developers.weixin.qq.com/miniprogram/dev/component/text.html</text>
+      <text class="hst-item" bindtap="tapHistoryItem" data-key="衣服">衣服</text>
     </view>
   </view>
 
