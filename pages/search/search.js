@@ -1,7 +1,7 @@
 const app =getApp();
 Page({
   data: {
-    historyStatus: false,
+    historyStatus: true,
     
     loading: false,
     loaded: false,
