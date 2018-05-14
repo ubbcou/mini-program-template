@@ -1,0 +1,33 @@
+<view class="page">
+
+  <view class="me-userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="userinfo-other">
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class="me-userinfo-update">
+        <button class="me-userinfo-update-btn" hover-class="none" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+        <view wx:else>请升级微信版本</view>
+      </view>
+    </view>
+  </view>
+
+  <!--
+    sp => setting-pannel 设置相关的面板
+    -->
+  <view class="sp-wrap">
+    <view class="sp-item" bindtap="openAuthorize">
+      <icon type="waiting" size="16" color="#e02e24" />
+      <view class="sp-item-text">
+        <view>授权管理</view>
+        <view class="sp-item-minitext">开启授权</view>
+      </view>
+    </view>
+    <view class="sp-item" bindtap="clearHistory">
+      <icon type="waiting" size="16" color="#e02e24" />
+      <view class="sp-item-text">
+        <view>清理缓存</view>
+      </view>
+    </view>
+  </view>
+
+</view>

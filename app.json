@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e02e24",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#e02e24",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/me/me",
+        "text": "我"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }
+    ]
+  },
+  "debug": true
+}

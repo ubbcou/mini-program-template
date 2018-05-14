@@ -1,0 +1,29 @@
+<!--
+  tile: 瓦
+  单个商品组件
+  -->
+<form>
+<button class="tile" bindtap="openPage" data-url="/pages/detail/detail">
+  <view class="tile-image">
+    <image src="http://img.hb.aicdn.com/4d7a2075bf7c6916c35952c1dd2167b778d76d1ab4e9-VWn5iR_sq320" />
+  </view>
+  <view class="tile-content">
+    <view class="tile-c-title">美宝莲橡皮擦遮瑕笔遮眼袋黑眼圈脸眼部遮瑕膏粉底液轻薄海淘爆款美宝莲橡皮擦遮瑕笔遮</view>
+    <view class="tile-between">
+      <text class="tile-c-quan">券￥<text class="tile-c-quan-lg">5</text></text>
+      <view>月销量31</view>
+    </view>
+    <view class="tile-between">
+      <view class="tile-bt-item">
+        <view class="tile-c-price">原价￥123.11</view>
+        <view class="tile-c-current-price">券后价
+          <text class="tile-c-current-price-lg">￥99993.99</text>
+        </view>
+      </view>
+      <view class="tile-bt-item">
+        <text>Other info</text>
+      </view>
+    </view>
+  </view>
+</button>
+</form>

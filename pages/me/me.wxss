@@ -1,0 +1,69 @@
+page {
+  background-color: #f7f7f7
+}
+
+/* 用户信息面板 ...start */
+.me-userinfo {
+  background-color: #e02e24;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-other {
+  margin-left: 24rpx;
+}
+
+.me-userinfo-update {
+  display: inline-block;
+  border: 1rpx solid #fff;
+  border-radius: 24rpx;
+  padding: 3rpx 24rpx;
+  margin-top: 12rpx;
+  opacity: .9
+}
+.me-userinfo-update-btn {
+  color: #fff;
+}
+/* 用户信息面板 ...end */
+
+/* 设置相关的面板 ...start */
+.sp-wrap {
+  margin: 24rpx;
+  padding: 24rpx;
+  border-radius: 6rpx;
+  background-color: #fff
+}
+
+.sp-item {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 24rpx
+}
+
+.sp-item:first-of-type {
+  padding-top: 0
+}
+
+.sp-item-text {
+  flex: 1;
+  margin-left: 12rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 14px
+}
+
+.sp-item-minitext {
+  margin-top: 6rpx;
+  font-size: 10px;
+  color: #888
+}
+/* 设置相关的面板 ...end */

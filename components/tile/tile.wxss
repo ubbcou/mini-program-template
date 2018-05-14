@@ -1,0 +1,83 @@
+.tile {
+  overflow: hidden;
+  padding: 12rpx 0;
+  border-bottom: 12rpx solid #f7f7f7;
+  font-size: 0;
+  color: #000;
+  text-align: left;
+}
+
+.tile-image {
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+  vertical-align: middle;
+}
+
+.tile-image image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tile-content {
+  display: inline-block;
+  overflow: hidden;
+  width: 570rpx;
+  box-sizing: border-box;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  font-size: 10px;
+  color: #666;
+  vertical-align: middle;
+}
+
+.tile-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 12rpx 0;
+}
+
+.tile-bt-item {
+  min-width: 50%;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.tile-c-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  color: #000;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+.tile-c-quan {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8rpx 12rpx 6rpx;
+  border-radius: 6rpx 0 6rpx 0;
+  background: linear-gradient(to top left, orange, #e02e24 50%, orange);
+  color: #fff;
+}
+
+.tile-c-quan-lg {
+  font-weight: bold;
+}
+
+.tile-c-price {
+  text-decoration: line-through;
+}
+
+.tile-c-current-price {
+  color: #e02e24;
+}
+
+.tile-c-current-price-lg {
+  font-size: 14px;
+  font-weight: bold;
+}

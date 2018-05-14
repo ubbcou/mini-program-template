@@ -1,0 +1,73 @@
+<view class="page">
+
+  <!-- 
+    搜索框
+    sch => search
+    -->
+  <form bindsubmit="submitSearch">
+    <view class="sch-wrap">
+      <view class="sch-input-wrap">
+        <input class="sch-input" placeholder="输入商品关键字" bindinput="changeKeyWords" bindconfirm="submitSearch" />
+        <button class="sch-clear-wrap" hover-class="none" form-type="reset" bindtap="clearKeyWord">
+          <icon type="clear" class="sch-clear" size="16" />
+        </button>
+      </view>
+      <button class="sch-btn" form-type="submit" hover-class="none">搜索</button>
+    </view>
+  </form>
+
+  <!--
+    历史搜索
+    hst => history
+    -->
+  <view class="hst-wrap" wx:if="{{historyStatus}}">
+    <view class="hst-title">
+      <text class="hst-title-item hst-title-text">历史搜索</text>
+      <text class="hst-title-item hst-clear">清空</text>
+    </view>
+    <view class="hst-list">
+      <text class="hst-item">衣服</text>
+      <text class="hst-item">衣服</text>
+      <text class="hst-item">decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+      <text class="hst-item">衣服</text>
+      <text class="hst-item">https://developers.weixin.qq.com/miniprogram/dev/component/text.html</text>
+      <text class="hst-item">衣服</text>
+    </view>
+  </view>
+
+  <!--
+    搜索结果列表
+    -->
+  <view class="tile-wrap" hidden="{{historyStatus}}">
+    <form>
+      <view class="tile-sort">
+        <button class="tile-sort-item ">
+          <text class="tile-sort-itext">综合</text>
+        </button>
+        <button class="tile-sort-item ">
+          <text class="tile-sort-itext">综合</text>
+        </button>
+        <button class="tile-sort-item ">
+          <text class="tile-sort-itext">综合</text>
+        </button>
+        <button class="tile-sort-item ">
+          <text class="tile-sort-itext">综合</text>
+        </button>
+      </view>
+    </form>
+
+    <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{item}}">
+      <tile />
+    </view>
+
+    <!-- load height~65px~130rpx -->
+    <view class="load-wrap">
+      <view class="loadmore">
+        <view class="loading"></view>
+        <view class="loadmore__tips">正在加载</view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

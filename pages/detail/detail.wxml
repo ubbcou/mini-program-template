@@ -1,0 +1,54 @@
+<view class="page">
+
+  <!--
+    轮播图片
+    -->
+  <swiper class="swip-wrap" indicator-dots indicator-active-color="#e02e24" interval="{{2500}}">
+    <block wx:for="{{[1,3]}}">
+      <swiper-item>
+        <image src="http://img.hb.aicdn.com/47c799c3bcec65f3c32affad895214521a7728a51e3a99-q8bL2E_fw658" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="detail-content">
+    <view class="detail-line1">
+
+      <view class="detail-between">
+        <view class="detail-c-quan detail-price">券￥
+          <text class="detail-c-quan-lg">10</text>
+        </view>
+        <text class="detail-price">原价￥32.33</text>
+        <text>剩余 3000 张</text>
+      </view>
+      <view class="detail-between">
+        <text class="detail-c-current-price">券后价￥<text class="detail-c-current-price-lg">23.22</text></text>
+        <text>有效期 2013-12-32 至 2013-12-32</text>
+      </view>
+    </view>
+
+    <view class="detail-line2">
+      <view class="detail-c-title">【官方正品】YSL圣罗兰纯口红方管 豆沙色姨妈色星星色持久不脱色</view>
+      <view class="detail-between">
+        <text>已售 32212</text>
+      </view>
+      <view class="detail-between">
+        <text>领券省钱</text>
+        <text>超低折扣</text>
+        <text>超值商品</text>
+      </view>
+    </view>
+
+    <view class="detail-description">
+      <view class="detail-desc-title">商品详情</view>
+      <view>喜欢ysl很久了，终于打算买一只送给自己做十八岁的礼物，欧耶真的很美，本宫不死，尔等终究是妃</view>
+      <view class="detail-desc-image-wrap">
+        <block wx:for="{{[1,1,1,1,1,1,1,1]}}">
+          <image 
+            mode="widthFix"
+            src="http://img.hb.aicdn.com/47c799c3bcec65f3c32affad895214521a7728a51e3a99-q8bL2E_fw658" />
+        </block>
+      </view>      
+    </view>
+  </view>
+</view>

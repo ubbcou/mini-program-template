@@ -1,0 +1,96 @@
+/* 轮播 ...start */
+
+.swip-wrap {
+  /* height: 337.5rpx; */
+  height: 750rpx;
+  background: #f7f7f7;
+}
+
+.swip-wrap image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 轮播 ...end */
+
+/* 详情主体 ...start*/
+
+.detail-content {
+  padding: 12rpx;
+  color: #666;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.detail-price {
+  font-size: 12px;
+}
+
+.detail-line1 {
+  border-bottom: 1rpx solid #ddd;
+  padding-bottom: 18rpx;
+}
+
+.detail-c-title {
+  margin-bottom: 12rpx;
+  font-size: 14px;
+  color: #000;
+}
+
+.detail-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+  margin-top: 12rpx;
+}
+
+.detail-c-quan {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8rpx 12rpx 6rpx;
+  border-radius: 6rpx 0 6rpx 0;
+  background: linear-gradient(to top left, orange, #e02e24 50%, orange);
+  color: #fff;
+}
+
+.detail-c-quan-lg {
+  font-weight: bold;
+}
+
+.detail-c-current-price {
+  color: #e02e24;
+  font-size: 12px;
+}
+
+.detail-c-current-price-lg {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detail-line2 {
+  padding-top: 18rpx;
+  border-bottom: 6rpx solid #ddd;
+  padding-bottom: 18rpx;
+}
+
+.detail-description {
+  padding-top: 18rpx;
+}
+
+.detail-desc-title {
+  border-left: 8rpx solid #e02e24;
+  font-size: 14px;
+  padding: 12rpx 0 12rpx 6rpx;
+  margin-bottom: 12rpx;
+}
+.detail-desc-image-wrap {
+  margin-top: 12rpx;
+}
+.detail-desc-image-wrap image {
+  display: block;
+  width: 100%;
+  height: auto
+}
+/* 详情主体 ...end*/
